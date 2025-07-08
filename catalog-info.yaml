@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-node-service
+  description: Microservicio de ejemplo en Node.js para Backstage
+  tags:
+    - node
+    - express
+  annotations:
+    github.com/project-slug: tu_usuario/my-node-service
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: equipo-dev
+  system: order-system
